@@ -1,0 +1,31 @@
+size 640 480
+color amb 0 0 0
+color diff 0 0 0
+color spec 1 1 1
+color magenta 1 0 1
+color red 1 0 0
+color blue 0 0 1
+color white 1 1 1
+color gray 0.7 0.7 0.7
+phong_shader shader amb diff spec 30
+sphere Ss .1 .1 .3 2.5
+shaded_object Ss shader
+ambient_light magenta .2
+point_light L0 8 2 8 blue 300
+point_light L00 8 3 8 blue 300
+point_light L1 -8 2 8 blue 300
+point_light L1 -8 3 8 blue 300
+point_light L2 0 -5 20 white 1000
+point_light L3.1 -10 -10 10 red 700
+point_light L3.2 -5 -12 10 red 700
+point_light L3.3 0 -14 10 red 700
+point_light L3.4 5 -12 10 red 700
+point_light L3.5 10 -10 10 red 700
+color gray .5 .5 .5
+flat_shader b gray
+background_shader b
+enable_shadows 0
+recursion_depth_limit 1
+camera 0 0 6 0 0 0 0 1 0 70
+# GRADING 1 0.10
+# NOTE Specular shading test - test exponent.
